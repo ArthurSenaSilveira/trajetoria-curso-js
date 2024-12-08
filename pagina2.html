@@ -1,143 +1,258 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Minha Trajetória com js</title>
-    <link rel="stylesheet" href="estilo/mobile.css">
-</head>
-<body>
+    <link rel="stylesheet" href="estilo/mobile.css" />
+  </head>
+  <body>
     <header>
-        <section>
-        
-            <h1>Acompanhe minha Trajetória com o curso de JavaScript</h1>
-        </section>
-        <menu>
-            <a href="index.html">Desafios</a>
-            <a href="#">O que eu aprendi</a>
-        </menu>
+      <section>
+        <h1>Acompanhe minha Trajetória com o curso de JavaScript</h1>
+      </section>
+      <menu>
+        <a href="index.html">Desafios</a>
+        <a href="#">O que eu aprendi</a>
+      </menu>
     </header>
     <main>
-        <h1>O que eu aprendi até aqui?</h1>
-        <Section>
-            <h2>Fundamentos do JavaScript</h2>
-            <p>O <strong>JavaScript</strong> é uma linguagem de programação usada principalmente para criar interatividade em páginas web. Ele é uma linguagem de alto nível, interpretada e orientada a objetos, essencial para o desenvolvimento front-end, mas também pode ser usado no back-end (ex: Node.js). Os fundamentos do JavaScript envolvem o uso de variáveis, tipos de dados, operadores, estrutura de controle, funções e manipulação do DOM(Documnet Object Model), que é a representação da página web no código.</p>
-        </Section>
-        <section>
-            <h2>Variáveis e Dados</h2>
-            <p>Em JavaScript, <strong>variáveis</strong> são usadas para armazenar dados. Você pode declarar variáveis usando as palavras-chaves <strong>var</strong>, <strong>let</strong> ou <strong>const</strong>. A diferença entre elas está no escopo e mutabilidade da variável. 
-            <ul>
-                <li><strong>let</strong> permite a reatribuição de valores e tem escopo de bloco.</li>
-                <li><strong>const</strong> é usada para declarar valores constantes(não podem ser reatribuídos)</li>
-                <li><strong>var</strong> tem um escopo global ou de função e é menos recomendada hoje em dia.</li>
-            </ul>
-        Os principais <strong>tipos de dados</strong> em JavaScript são:
-            <ul>
-                <li><strong>Primitivos:</strong> <strong>number</strong>, <strong>string</strong>, <strong>boolean</strong>, <strong>idefined</strong>, <strong>null</strong>, <strong>symbol</strong>, <strong>biginy</strong>.</li>
-                <li><strong>Não primiticos:</strong> <strong>object</strong>, que inclui arrays, funções, e objetos</li>
-            </ul>
-            </p>
-        </section>
-        <section>
-            <h2>Operadores</h2>
-            <p>Os <strong>operadores</strong> em JavaScript são usados para realizar operações sobre valores. Exitem vários tipos de operadores:
-                <ul>
-                    <li><strong>Aritméticos</strong>: <strong>+</strong>, <strong>-</strong>, <strong>*</strong>, <strong>/</strong>, <strong>%</strong> (para soma, subtração, multiplicação, divisão, e resto).</li>
-                    <li><strong>Relacionais</strong>: <strong><abbr title="Igual">==</abbr></strong>, <strong><abbr title="Idêntico">===</abbr></strong>, <strong><abbr title="Desigualdade com conversão de tipo">!=</abbr></strong> <strong><abbr title="Desigualdade estrita, ou seja, sem conversão de tipo.">!==</abbr></strong>, <strong><abbr title="Maior">></abbr></strong>, <strong><abbr title="Menor"><</abbr></strong>, <strong><abbr title="Maior ou igual">>=</abbr></strong>, <strong><abbr title="Menor ou igual"><=</abbr></strong> (para comparar valores).</li>
-                    <li>
-                        <strong>lógicos</strong>: <strong><abbr title="E">&&</abbr></strong>, <strong><abbr title="Ou">||</abbr></strong>, <strong><abbr title="Não">!</abbr></strong> para operações booleanas.
-                    </li>
-                    <li>
-                        <strong>Atribuição</strong>: <strong>=</strong>, <strong>+=</strong>, <strong>-=</strong>, <strong>*=</strong>, <strong>/=</strong>, etc
-                    </li>
-                    <li><strong>Ternário</strong>: Um operador condicional (<strong>condição? valor_se_verdadeiro : valor_se_falos</strong>).</li>
-                </ul>
-
-            </p>
-        </section>
-        <section>
-            <h2>Condições</h2>
-            <p>
-                As <strong>Condições</strong> permitem que o código execulte diferentes blocos de código com em condiçoes específicas. em JavaScript, as principais estruturas de controle condicional são:
-                <ul>
-                    <li>
-                        <strong>if</strong>: Executa um bloco de código se a condição for veradeira.
-                    </li>
-                    <li>
-                        <strong>else</strong>: Executa outro bloco de código se acondição <strong>if</strong> for falsa
-                    </li>
-                    <li>
-                        <strong>else if</strong>: Verifica várias condições sequenciais.
-                    </li>
-                    <li>
-                        <strong>switch</strong>: Uma alternativa ao <strong>if</strong> quando se tem várias condições a verifiacar, especialmente para comparar um único valor com múltiplos casos.
-                    </li>
-                </ul>
-            </p>
-        </section>
-        <section>
-            <h2>Repetições</h2>
-            <p>
-                As <strong>estruturas de Repetições</strong> permitem executar um bloco de código várias vezes. As principais são:
-                <ul>
-                    <li><strong>for</strong>: Executa um bloco de código enquanto uma condição for verdadeira.
-                    </li>
-                    <li><strong>while</strong>: Executa um bloco de código enquanto a condição for verdadeira.</li>
-                    <li><strong>do...while</strong>: Executa o bloco de código pelo menos uma vez, antes de verificar a condição.</li>
-                </ul>
-            </p>
-        </section>
-        <section>
-            <h2>Arrays</h2>
-            <p>
-                <strong>Arrays</strong> são coleções ordenadas de dados, onde podemos armazenar múltiplos valores em uma única variável. Eles podem conter qualquer tipo de dado (números, strings, objetos, etc.).
-
-                Métodos comuns para manipular arrays incluem <strong>push</strong>() (adicionar), <strong>pop</strong>() (remover), <strong>shift</strong>() (remover o primeiro), <strong>unshift</strong>() (adicionar no início), entre outros.
-            </p>
-        </section>
-        <section>
-            <h2>Funções</h2>
-            <p><strong>Funções</strong> são blocos de códigos reutilizáveis. elas podem receber parâmetros(dados) e retornar um valor. Existem duas formas principais de declarar funções em JavaScript
-            <ul>
-                <li><strong>Declaração de função</strong></li>
-                <li><strong>Função anônima (ou arrow function)</strong></li>
-            </ul>
-            Funções podem ser chamadas em qualquer lugar do código e ajudam a manter o código organizado e reutilizável.
+      <h1>O que eu aprendi até aqui?</h1>
+      <section>
+        <h2>Fundamentos do JavaScript</h2>
+        <p>
+          O <strong>JavaScript</strong> é uma linguagem de programação usada
+          principalmente para criar interatividade em páginas web. Ele é uma
+          linguagem de alto nível, interpretada e orientada a objetos, essencial
+          para o desenvolvimento front-end, mas também pode ser usado no
+          back-end (ex: Node.js). Os fundamentos do JavaScript envolvem o uso de
+          variáveis, tipos de dados, operadores, estrutura de controle, funções
+          e manipulação do DOM(Documnet Object Model), que é a representação da
+          página web no código.
         </p>
-        </section>
-        <section>
-            <h2>DOM (Document Object Model)</h2>
-            <p>
-                O <strong>DOM</strong>  (Document Object Model) é uma interface de programação que permite manipular a estrutura de um documento HTML ou XML em JavaScript. Ele permite acessar e modificar os elementos da página web dinamicamente.
-                <ul>
-                    <li><strong>Acessar elementos: document.getElementById(), document.getElementsByClassName(), document.querySelector().</strong></li>
-                    <li><strong>Modificar conteúdo: element.innerHTML, element.textContent.</strong></li>
-                    <li><strong>Alterar atributos: element.setAttribute(), element.getAttribute().</strong></li>
-                    <li><strong>Adicionar eventos</strong>: <strong>element.addEventListener()</strong>, como <strong>click</strong>, <strong>keydown</strong>, etc.</li>
-                </ul>
-            </p>
-        </section>
-        <section>
-            <h1>Proximos Passos</h1>
-            <ol>
-                <li>Continuar e se apronfundar nos estudos de <strong>Funções</strong></li>
-                <li>Estudar <strong>objetos</strong></li>
-                <li>
-                    estudar sobre <strong>modularização</strong>
-                </li>
-                <li>
-                    RefEx: Espreções regulares
-                </li>
-                <li><strong>JSON</strong></li>
-                <li><strong>AJAX</strong></li>
-                <li><strong>NodeJS</strong></li>
-            </ol>
-        </section>
+      </section>
+      <section>
+        <h2>Variáveis e Dados</h2>
+        <p>
+          Em JavaScript, <strong>variáveis</strong> são usadas para armazenar
+          dados. Você pode declarar variáveis usando as palavras-chaves
+          <strong>var</strong>, <strong>let</strong> ou <strong>const</strong>.
+          A diferença entre elas está no escopo e mutabilidade da variável.
+        </p>
+        <ul>
+          <li>
+            <strong>let</strong> permite a reatribuição de valores e tem escopo
+            de bloco.
+          </li>
+          <li>
+            <strong>const</strong> é usada para declarar valores constantes(não
+            podem ser reatribuídos)
+          </li>
+          <li>
+            <strong>var</strong> tem um escopo global ou de função e é menos
+            recomendada hoje em dia.
+          </li>
+        </ul>
+        <p>Os principais <strong>tipos de dados</strong> em JavaScript são:</p>
+        <ul>
+          <li>
+            <strong>Primitivos:</strong> <strong>number</strong>,
+            <strong>string</strong>, <strong>boolean</strong>,
+            <strong>idefined</strong>, <strong>null</strong>,
+            <strong>symbol</strong>, <strong>biginy</strong>.
+          </li>
+          <li>
+            <strong>Não primiticos:</strong> <strong>object</strong>, que inclui
+            arrays, funções, e objetos
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2>Operadores</h2>
+        <p>
+          Os <strong>operadores</strong> em JavaScript são usados para realizar
+          operações sobre valores. Exitem vários tipos de operadores:
+        </p>
+        <ul>
+          <li>
+            <strong>Aritméticos</strong>: <strong>+</strong>,
+            <strong>-</strong>, <strong>*</strong>, <strong>/</strong>,
+            <strong>%</strong> (para soma, subtração, multiplicação, divisão, e
+            resto).
+          </li>
+          <li>
+            <strong>Relacionais</strong>:
+            <strong><abbr title="Igual">==</abbr></strong
+            >, <strong><abbr title="Idêntico">===</abbr></strong
+            >,
+            <strong
+              ><abbr title="Desigualdade com conversão de tipo"
+                >!=</abbr
+              ></strong
+            >
+            <strong
+              ><abbr
+                title="Desigualdade estrita, ou seja, sem conversão de tipo."
+                >!==</abbr
+              ></strong
+            >, <strong><abbr title="Maior">></abbr></strong
+            >, <strong><abbr title="Menor"><</abbr></strong
+            >, <strong><abbr title="Maior ou igual">>=</abbr></strong
+            >, <strong><abbr title="Menor ou igual"><=</abbr></strong> (para
+            comparar valores).
+          </li>
+          <li>
+            <strong>lógicos</strong>: <strong><abbr title="E">&&</abbr></strong
+            >, <strong><abbr title="Ou">||</abbr></strong
+            >, <strong><abbr title="Não">!</abbr></strong> para operações
+            booleanas.
+          </li>
+          <li>
+            <strong>Atribuição</strong>: <strong>=</strong>,
+            <strong>+=</strong>, <strong>-=</strong>, <strong>*=</strong>,
+            <strong>/=</strong>, etc
+          </li>
+          <li>
+            <strong>Ternário</strong>: Um operador condicional (<strong
+              >condição? valor_se_verdadeiro : valor_se_falos</strong
+            >).
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2>Condições</h2>
+        <p>
+          As <strong>Condições</strong> permitem que o código execulte
+          diferentes blocos de código com em condiçoes específicas. em
+          JavaScript, as principais estruturas de controle condicional são:
+        </p>
+        <ul>
+          <li>
+            <strong>if</strong>: Executa um bloco de código se a condição for
+            veradeira.
+          </li>
+          <li>
+            <strong>else</strong>: Executa outro bloco de código se acondição
+            <strong>if</strong> for falsa
+          </li>
+          <li>
+            <strong>else if</strong>: Verifica várias condições sequenciais.
+          </li>
+          <li>
+            <strong>switch</strong>: Uma alternativa ao
+            <strong>if</strong> quando se tem várias condições a verifiacar,
+            especialmente para comparar um único valor com múltiplos casos.
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2>Repetições</h2>
+        <p>
+          As <strong>estruturas de Repetições</strong> permitem executar um
+          bloco de código várias vezes. As principais são:
+        </p>
+        <ul>
+          <li>
+            <strong>for</strong>: Executa um bloco de código enquanto uma
+            condição for verdadeira.
+          </li>
+          <li>
+            <strong>while</strong>: Executa um bloco de código enquanto a
+            condição for verdadeira.
+          </li>
+          <li>
+            <strong>do...while</strong>: Executa o bloco de código pelo menos
+            uma vez, antes de verificar a condição.
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2>Arrays</h2>
+        <p>
+          <strong>Arrays</strong> são coleções ordenadas de dados, onde podemos
+          armazenar múltiplos valores em uma única variável. Eles podem conter
+          qualquer tipo de dado (números, strings, objetos, etc.). Métodos
+          comuns para manipular arrays incluem <strong>push</strong>()
+          (adicionar), <strong>pop</strong>() (remover),
+          <strong>shift</strong>() (remover o primeiro),
+          <strong>unshift</strong>() (adicionar no início), entre outros.
+        </p>
+      </section>
+      <section>
+        <h2>Funções</h2>
+        <p>
+          <strong>Funções</strong> são blocos de códigos reutilizáveis. elas
+          podem receber parâmetros(dados) e retornar um valor. Existem duas
+          formas principais de declarar funções em JavaScript
+        </p>
+        <ul>
+          <li><strong>Declaração de função</strong></li>
+          <li><strong>Função anônima (ou arrow function)</strong></li>
+        </ul>
+        <p>
+          Funções podem ser chamadas em qualquer lugar do código e ajudam a
+          manter o código organizado e reutilizável.
+        </p>
+      </section>
+      <section>
+        <h2>DOM (Document Object Model)</h2>
+        <p>
+          O <strong>DOM</strong> (Document Object Model) é uma interface de
+          programação que permite manipular a estrutura de um documento HTML ou
+          XML em JavaScript. Ele permite acessar e modificar os elementos da
+          página web dinamicamente.
+        </p>
+        <ul>
+          <li>
+            <strong
+              >Acessar elementos: document.getElementById(),
+              document.getElementsByClassName(),
+              document.querySelector().</strong
+            >
+          </li>
+          <li>
+            <strong
+              >Modificar conteúdo: element.innerHTML,
+              element.textContent.</strong
+            >
+          </li>
+          <li>
+            <strong
+              >Alterar atributos: element.setAttribute(),
+              element.getAttribute().</strong
+            >
+          </li>
+          <li>
+            <strong>Adicionar eventos</strong>:
+            <strong>element.addEventListener()</strong>, como
+            <strong>click</strong>, <strong>keydown</strong>, etc.
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h1>Proximos Passos</h1>
+        <ol>
+          <li>
+            Continuar e se apronfundar nos estudos de <strong>Funções</strong>
+          </li>
+          <li>Estudar <strong>objetos</strong></li>
+          <li>estudar sobre <strong>modularização</strong></li>
+          <li>RefEx: Espreções regulares</li>
+          <li><strong>JSON</strong></li>
+          <li><strong>AJAX</strong></li>
+          <li><strong>NodeJS</strong></li>
+        </ol>
+      </section>
     </main>
     <footer>
-        <p>
-            &copy; 2024 <strong><a href="https://github.com/ArthurSenaSilveira">Arthur Sena</a></strong>.
-        </p>
+      <p>
+        &copy; 2024
+        <strong
+          ><a href="https://github.com/ArthurSenaSilveira"
+            >Arthur Sena</a
+          ></strong
+        >.
+      </p>
     </footer>
-</body>
+  </body>
 </html>
